@@ -28,13 +28,13 @@ import io.appium.java_client.touch.offset.PointOption;
 
 public class longPressIssueOniOS {
 
-	public static String userName = "mushtaqsayyed1";
-	public static String accessKey = "Hh2ibSxRxYXDjmP8VEWf";
+	public static String userName = "<your BrowserStack UserName>";
+	public static String accessKey = "your BrowserStack Key";
 
 	public static void main(String args[]) throws MalformedURLException, InterruptedException {
 		DesiredCapabilities caps = new DesiredCapabilities();
 
-		caps.setCapability("app", "bs://6c84fb2241c33cd507ea820bf79708e35203d983");
+		caps.setCapability("app", "bs://<App hash-Id>");
 		caps.setCapability("os_version", "10.3");
 		caps.setCapability("device", "iPhone 7 Plus");
 		caps.setCapability("real_mobile", "true");
@@ -69,13 +69,10 @@ public class longPressIssueOniOS {
 		IOSElement textButton2 = (IOSElement) new WebDriverWait(driver, 30).until(ExpectedConditions
 				.elementToBeClickable(MobileBy.xpath("//XCUIElementTypeButton[@name='ParentalGatingLadybug']")));
 
-		new TouchAction(driver).longPress(ElementOption.element(textButton2)).release().perform(); // For
+		new TouchAction(driver).longPress(ElementOption.element(textButton2)).release().perform(); 
+		// For long press on specific element
 																									// long
-																									// press
-																									// on
-																									// specific
-																									// element
-
+			
 		/*
 		  new TouchAction(driver).press(PointOption.point(123,233)).waitAction().release().perform();
 		 
