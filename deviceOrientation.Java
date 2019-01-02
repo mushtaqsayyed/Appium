@@ -11,8 +11,6 @@ import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.touch.offset.PointOption;
 
 public class scrollInAndroid {
-
-	private static String mode = "PORTRAIT";
 	
 	public static String userName = "<your username>";
 	  public static String accessKey = "your accessKey";
