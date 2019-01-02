@@ -13,7 +13,7 @@ import io.appium.java_client.touch.offset.PointOption;
 public class scrollInAndroid {
 	
 	public static String userName = "<your username>";
-	  public static String accessKey = "your accessKey";
+	  public static String accessKey = "<your accessKey>";
 
 	  public static void main(String args[]) throws MalformedURLException, InterruptedException {
 	    DesiredCapabilities caps = new DesiredCapabilities();
